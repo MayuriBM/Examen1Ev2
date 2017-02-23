@@ -30,7 +30,7 @@ private static final long serialVersionUID = -1935854748907274886L;
 				super.onSubmit();
 				Alumno newAlumno = new Alumno();
 				//casteo para que sepa que es un team. con el getModelObject accedo al valor que haya en los inputs
-				newAlumno .setNameAlumno(((Alumno) getModelObject()).getNameAlumno());
+				newAlumno .setNamealumno((((Alumno) getModelObject()).getNamealumno()));
 				newAlumno .setBocadillo(((Alumno)getModelObject()).getBocadillo());
 				serviceAlumno.insert(newAlumno);
 				//addViewList();
@@ -39,7 +39,7 @@ private static final long serialVersionUID = -1935854748907274886L;
 		
 		form.add(new Label("nameAlumnoLabel", getString("alumno.name")));
 		form.add(new Label("bocadilloLabel", getString("tipo.bocadillo")));
-		form.add(new RequiredTextField("nameAlumno"));
+		form.add(new RequiredTextField("namealumno"));
 		form.add(new RequiredTextField("bocadillo"));
 		
 		add(form);

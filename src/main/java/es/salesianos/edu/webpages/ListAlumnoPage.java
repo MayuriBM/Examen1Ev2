@@ -61,7 +61,7 @@ public class ListAlumnoPage extends WebPage{
 			@Override
 			protected void populateItem(ListItem item) {
 				Alumno alumno = (Alumno) item.getModelObject();
-				item.add(new Label("name", alumno.getname()));
+				item.add(new Label("name", alumno.getNamealumno()));
 				item.add(new Label("bocadillo", alumno.getBocadillo()));
 			}
 		};

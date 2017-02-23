@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Alumno implements Serializable{
 	
-	private String nameAlumno;
+	private String namealumno;
 	private String bocadillo;
 	
 	public String getBocadillo() {
@@ -13,11 +13,11 @@ public class Alumno implements Serializable{
 	public void setBocadillo(String bocadillo) {
 		this.bocadillo = bocadillo;
 	}
-	public String getNameAlumno() {
-		return nameAlumno;
+	public String getNamealumno() {
+		return namealumno;
 	}
-	public void setNameAlumno(String nameAlumno) {
-		this.nameAlumno = nameAlumno;
+	public void setNamealumno(String nameAlumno) {
+		this.namealumno = nameAlumno;
 	}
 	
 	
