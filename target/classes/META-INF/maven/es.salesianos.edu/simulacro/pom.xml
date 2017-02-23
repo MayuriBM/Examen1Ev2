@@ -9,10 +9,10 @@
 	</parent>
 
 	<groupId>es.salesianos.edu</groupId>
-	<artifactId>examen</artifactId>
+	<artifactId>simulacro</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>examen</name>
+	<name>simulacro</name>
 
 
 	<repositories>
