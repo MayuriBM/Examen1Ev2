@@ -15,7 +15,7 @@ public class AlumnoPage extends WebPage {
 private static final long serialVersionUID = -1935854748907274886L;
 	
 	@SpringBean 
-	ServiceTeam serviceTeam;
+	ServiceAlumno serviceAlumno;
 	
 	@Autowired
 	Repository repository;
@@ -29,9 +29,9 @@ private static final long serialVersionUID = -1935854748907274886L;
 				super.onSubmit();
 				Alumno newAlumno = new Alumno();
 				//casteo para que sepa que es un team. con el getModelObject accedo al valor que haya en los inputs
-				newTeam.setNameTeam(((Team) getModelObject()).getNameTeam());
-				newTeam.setDivisionTeam(((Team)getModelObject()).getDivisionTeam());
-				serviceTeam.insert(newTeam);
+				newAlumno .setname(((Alumno) getModelObject()).getname());
+				newAlumno .setBocadillo(((Alumno)getModelObject()).getBocadillo());
+				serviceAlumno.insert(newAlumno);
 				//addViewList();
 			}
 		};
