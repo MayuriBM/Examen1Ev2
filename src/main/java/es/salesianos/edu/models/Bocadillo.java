@@ -5,7 +5,14 @@ import java.io.Serializable;
 public class Bocadillo implements Serializable {
 	private String tofu;
 	private String longaniza;
+	private String precio;
 	
+	public String getPrecio() {
+		return precio;
+	}
+	public void setPrecio(String precio) {
+		this.precio = precio;
+	}
 	public String getTofu() {
 		return tofu;
 	}

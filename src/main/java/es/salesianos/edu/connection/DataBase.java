@@ -2,29 +2,19 @@ package es.salesianos.edu.connection;
 
 import java.util.ArrayList;
 
-import es.salesianos.edu.models.Player;
-import es.salesianos.edu.models.Team;
+import es.salesianos.edu.models.Alumno;
 
 public class DataBase {
 
-	private ArrayList<Team> teams = new ArrayList<Team>();
+	private ArrayList<Alumno> Alumno = new ArrayList<Alumno>();
 
-	public ArrayList<Team> getTeams() {
-		return teams;
+	public ArrayList<Alumno> getAlumno() {
+		return Alumno;
 	}
 
-	public void setTeams(ArrayList<Team> teams) {
-		this.teams = teams;
+	public void setAlumno(ArrayList<Alumno> alumno) {
+		this.Alumno = alumno;
 	}
 	
-	private ArrayList<Player> players = new ArrayList<Player>();
-
-	public ArrayList<Player> getPlayers() {
-		return players;
-	}
-
-	public void setPlayers(ArrayList<Player> players) {
-		this.players = players;
-	}
-
+	
 }
