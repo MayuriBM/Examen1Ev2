@@ -8,8 +8,9 @@ import org.apache.wicket.model.CompoundPropertyModel;
 import org.apache.wicket.spring.injection.annot.SpringBean;
 import org.springframework.beans.factory.annotation.Autowired;
 
-
+import es.salesianos.edu.models.Alumno;
 import es.salesianos.edu.repository.Repository;
+import es.salesianos.edu.service.ServiceAlumno;
 
 public class AlumnoPage extends WebPage {
 private static final long serialVersionUID = -1935854748907274886L;
@@ -36,10 +37,10 @@ private static final long serialVersionUID = -1935854748907274886L;
 			}
 		};
 		
-		form.add(new Label("nameTeamLabel", getString("team.name")));
-		form.add(new Label("divisionTeamLabel", getString("team.division")));
-		form.add(new RequiredTextField("nameTeam"));
-		form.add(new RequiredTextField("divisionTeam"));
+		form.add(new Label("nameAlumnoLabel", getString("alumno.name")));
+		form.add(new Label("bocadilloLabel", getString("tipo.bocadillo")));
+		form.add(new RequiredTextField("nameAlumno"));
+		form.add(new RequiredTextField("bocadillo"));
 		
 		add(form);
 		
